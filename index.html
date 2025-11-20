@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord最強荒らしサーバーランキング</title>
+    <style>
+        body {
+            font-family: "Arial", sans-serif;
+            background: linear-gradient(to bottom, #f5f7fa, #c3cfe2);
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            padding: 50px 20px 20px 20px;
+            background: #4b79a1;
+            color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        section.intro {
+            max-width: 800px;
+            margin: 40px auto 60px auto;
+            padding: 0 20px;
+            font-size: 1.2em;
+            line-height: 1.8em;
+        }
+        section.ranking {
+            max-width: 800px;
+            margin: 0 auto 60px auto;
+            padding: 0 20px;
+        }
+        .rank-item {
+            margin-bottom: 60px;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.8s ease;
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .rank-item.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .rank-item h2 {
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+        .rank-item a {
+            color: #1e90ff;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .rank-item a img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+        .rank-item p {
+            font-size: 1em;
+            line-height: 1.6em;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Discord最強荒らし対策サーバー</h1>
+    </header>
+
+    <section class="intro">
+        <p>このサイトでは、Discord最強荒らし対策サーバー5選をご紹介いたします。特に面白いサーバーや、選挙で最も多かったサーバーが投票されます。もしご覧いただいた後、お気に召されたら幸いです。それではまず5位からご紹介いたします。</p>
+    </section>
+
+    <section class="ranking">
+        <div class="rank-item">
+            <h2>第5位</h2>
+            <a href="https://discord.gg/tobyskill" target="_blank">
+                <img src="https://cdn.discordapp.com/icons/1234567890/abcdef123456.png" alt="Toby Skill Icon">
+                🔥Toby Skill🔥
+            </a>
+            <p>とても有能。だが、知らない人が多いため、最下位まで落ちてしまった。とても簡単な荒らし方だが、今はもう時代遅れだろう。</p>
+        </div>
+
+        <div class="rank-item">
+            <h2>第4位</h2>
+            <a href="https://discord.gg/zNmfRF5U7a" target="_blank">
+                <img src="https://cdn.discordapp.com/icons/1234567890/abcdef123456.png" alt="PiyoⅠServer Icon">
+                🐣PiyoⅠServer🐣
+            </a>
+            <p>このサーバーはまったく荒らし関連に当たらないが、ボットが存在する。選挙で決めるときなぜか出てきた不思議な鯖だ。</p>
+        </div>
+
+        <div class="rank-item">
+            <h2>第3位</h2>
+            <a href="https://discord.gg/stkr" target="_blank">
+                <img src="https://cdn.discordapp.com/icons/1234567890/abcdef123456.png" alt="荒ʖˋし共和国 Icon">
+                荒ʖˋし共和国｜革命マロン派☭
+            </a>
+            <p>このサーバーは、3000人という大勢の物が存在して、前まではチート関連などのサーバーだったが、配布を終了し、なぜか急に荒らし関連に紛れ込んできた。</p>
+        </div>
+
+        <div class="rank-item">
+            <h2>第2位</h2>
+            <a href="https://discord.gg/dpko" target="_blank">
+                <img src="https://cdn.discordapp.com/icons/1234567890/abcdef123456.png" alt="DPKO Icon">
+                DPKO
+            </a>
+            <p>荒らし対策が非常にしっかりしており、安全性が高い。</p>
+        </div>
+
+        <div class="rank-item">
+            <h2>第1位</h2>
+            <a href="https://discord.gg/ozetudo" target="_blank">
+                <img src="https://cdn.discordapp.com/icons/1234567890/abcdef123456.png" alt="おぜつど鯖 Icon">
+                おぜつど鯖
+            </a>
+            <p>最高のサーバーだ。荒らし対策もされてる上には、外部アプリケーション、荒らしbot、すべてが記載されている。そして何より高性能なところがよい。</p>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 🏆投票らんきんぐますたー🏆 All Rights Reserved.
+    </footer>
+
+    <script>
+        // スクロールでランキング表示
+        const items = document.querySelectorAll('.rank-item');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.2 });
+
+        items.forEach(item => observer.observe(item));
+    </script>
+</body>
+</html>
